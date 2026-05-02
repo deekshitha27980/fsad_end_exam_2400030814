@@ -8,25 +8,16 @@ This Maven project demonstrates Hibernate Query Language (HQL) operations on a `
 
 ## Database
 
-- Database name: `fsadendexam`
-- Update MySQL credentials in `src/main/resources/hibernate.cfg.xml`
-- Create the database using `create-db.sql`
-
-## Create the database
-
-Run the SQL script from your MySQL shell or client:
-
-```sql
-SOURCE create-db.sql;
-```
-
-If you want a dedicated user, uncomment and adjust the `CREATE USER` and `GRANT` statements inside `create-db.sql`.
+- Uses embedded H2 database; no external database installation is required
+- The database file is created automatically in `fsad-end-sem/data`
+- No changes are needed in `src/main/resources/hibernate.cfg.xml` unless you want a custom path
 
 ## Build
 
-From the project root (`hibernate-delivery`):
+From the project root (`fsad-end-sem`):
 
 ```bash
+cd "c:\Users\deeks\OneDrive\Desktop\pro connect clone-backend\fsad-end-sem"
 mvn clean package
 ```
 
